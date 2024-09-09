@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Alerta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Exercício 1</h1>
+            <button id="meuBotao">Clique aqui</button>
+        </div>
+        <div class="container">
+            <h1>Exercício 2</h1>
+            <button id="meuBotao2">Clique aqui</button>
+        </div>
+        <div class="container">
+            <h1>Exercício 3</h1>
+            <div class="exercicio-3-container">
+                <div class="inner">
+                    <input type="text" id="inputFrase" placeholder="Digite uma frase...">
+                    <button id="copiarBotao">Copiar</button>
+                </div>
+                <div id="exibirFrase"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Exercício 4</h1>
+            <input type="number" id="inputValue" placeholder="Digite um valor">
+            <button id="verificarBtn">Verificar</button>
+            <p id="resultado-4"></p>
+        </div>
+        <div class="container">
+            <h1>Exercício 5</h1>
+            <input type="number" id="numero" placeholder="Digite um número">
+            <button onclick="mostrarImpares()">Exibir Ímpares</button>
+            <div id="resultado-5"></div>
+        </div>
+        <div class="container">
+            <h1>Exercício 6</h1>
+            <textarea id="texto" placeholder="Digite seu texto aqui..." rows="8"></textarea>
+            <div class="contador">
+                <label for="contadorInput">Número de caracteres:</label>
+                <input type="text" id="contadorInput" readonly>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Exercício 7</h1>
+            <p id="meuParagrafo">
+                Ao clicar no botão abaixo, este texto será escondido
+            </p>
+            <button id="esconderBotao">Esconder Parágrafo</button>
+        </div>
+        <div class="container">
+            <h1>Exercício 8</h1>
+            <button id="comecar">Iniciar</button>
+            <p id="resultado-8"></p>
+        </div>
+        <div class="container">
+            <h1>Exercício 9</h1>
+            <img src="./imagens/arrasca.jpg" alt="" id="imagem" onmouseover="trocarImagem()" onmouseout="voltarImagem()">
+        </div>
+        <div class="container">
+            <h1>Exercício 10</h1>
+            <form id="formulario" class="formulario">
+                <div class="inner-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+    
+                <div class="inner-form">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+    
+                <div class="inner-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="mensagem">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="5" name="mensagem" required></textarea>
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </form>
+    
+            <div id="result" class="result">
+                <!-- A mensagem simulando o envio do e-mail será exibida aqui -->
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
